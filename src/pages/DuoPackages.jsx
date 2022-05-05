@@ -5,7 +5,7 @@ import Service from '../components/Service';
 import mainImage from '../images/duo-packages/main.jpg';
 
 export default function DuoPackages() {
-  const beardCuts = [
+  const duoPackages = [
     {
       name: 'Equinox Signature Head + Face Shave',
       description: `Duration: 2hrs. This is a luxurious grooming treatment combining a mini facial/face massage and cut throat razor 
@@ -76,8 +76,8 @@ export default function DuoPackages() {
       </Section>
 
       <Section className="grid md:grid-cols-2 gap-4">
-        {beardCuts.map((beardCut) => (
-          <Service {...beardCut} key={beardCut.name} />
+        {duoPackages.map((duoPackage) => (
+          <Service {...duoPackage} key={duoPackage.name} />
         ))}
       </Section>
     </>

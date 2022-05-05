@@ -8,6 +8,7 @@ import Hair from './pages/Hair';
 import Beards from './pages/Beards';
 import Shaves from './pages/Shaves';
 import DuoPackages from './pages/DuoPackages';
+import GiftCertificates from './pages/GiftCertificates';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/beards" element={<Beards />} />
         <Route path="/shaves" element={<Shaves />} />
         <Route path="/duo-packages" element={<DuoPackages />} />
+        <Route path="/gift-certificates" element={<GiftCertificates />} />
       </Routes>
 
       <Footer />
