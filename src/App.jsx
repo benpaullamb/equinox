@@ -20,7 +20,7 @@ export default function App() {
         <Route path="/hair" element={<Hair />} />
         <Route path="/beards" element={<Beards />} />
         <Route path="/shaves" element={<Shaves />} />
-        <Route path="/duo" element={<DuoPackages />} />
+        <Route path="/duo-packages" element={<DuoPackages />} />
       </Routes>
 
       <Footer />

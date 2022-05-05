@@ -4,14 +4,55 @@ import Service from '../components/Service';
 
 import mainImage from '../images/duo-packages/main.jpg';
 
-export default function Hair() {
+export default function DuoPackages() {
   const beardCuts = [
     {
-      name: "Gentleman's Beard Grooming",
-      description: `Providing you with the opportunity to be more creative by tailoring your beard design to your 
-        desired look. Our expert barbers will refine, define, maintain and style your beard and moustache into a 
-        thing of beauty.`,
-      price: 18,
+      name: 'Equinox Signature Head + Face Shave',
+      description: `Duration: 2hrs. This is a luxurious grooming treatment combining a mini facial/face massage and cut throat razor 
+        shave combining with a head shave. We will first take the hair down to grade 0 and apply a hot lather of 
+        Proraso shaving cream with a badger shaving brush. This is followed by a steaming hot towel wrap to soften 
+        the hair. A second hot lather will then be applied before giving the closest of shaves. We then finish off 
+        the treatment with Proraso moisturiser gently massaged into the scalp.`,
+      price: 80,
+    },
+    {
+      name: 'Equinox Signature Wet Shave + Wet Cut & Finish',
+      description: `Duration: 1hr 30 mins. This is a luxurious grooming treatment combining a mini facial/face massage and cut 
+        throat razor shave combining with the hair grooming service. The hair is cut, dried and finished with cut throat edging 
+        using products to suit your hair type. (includes skin fade option)`,
+      price: 71,
+    },
+    {
+      name: 'Equinox Signature Wet Shave + Back & Sides',
+      description: `Duration: 1hr 30 mins. This is a luxurious grooming treatment combining a mini facial/face massage and cut 
+        throat razor shave combining with the hair grooming service. Just the Back & Sides is cut, no hair is cut on top. The 
+        hair is then sprayed down, dried and finished with cutthroat edging, using products to suit your hair type.`,
+      price: 69,
+    },
+    {
+      name: 'Equinox Signature Wet Shave + Clipper Cut',
+      description: `Duration: 1hr 30 mins. This is a luxurious grooming treatment combining a mini facial/face massage and cut 
+        throat razor shave combining with the hair grooming service. Clipper Cut grading all over with clipper grades, blending 
+        and cut throat edging.`,
+      price: 65,
+    },
+    {
+      name: "Gentleman's Wet Cut And Finish + Beard Grooming",
+      description: `Relax in the knowledge your barber is an expert in cutting and styling your hair & beard, creating the perfect 
+        hair & beard grooming that suits your lifestyle. using only the best hair and beard products`,
+      price: 48,
+    },
+    {
+      name: "Gentleman's Back & Sides + Beard Grooming",
+      description: `Relax in the knowledge your barber is an expert in cutting and styling your hair & beard, creating the perfect 
+        hair & beard grooming that suits your lifestyle. using only the best hair and beard products`,
+      price: 43,
+    },
+    {
+      name: "Gentleman's Clipper Cut + Beard Grooming",
+      description: `Relax in the knowledge your barber is an expert in cutting and styling your hair & beard, creating the perfect 
+        hair & beard grooming that suits your lifestyle. using only the best hair and beard products`,
+      price: 39,
     },
   ];
 
@@ -20,27 +61,18 @@ export default function Hair() {
       <Banner mobileImage={mainImage} />
 
       <Section>
-        <h2 className="text-xl md:text-2xl font-bold">Gentleman's Beard Grooming</h2>
+        <h2 className="text-xl md:text-2xl font-bold">Duo Packages</h2>
 
         <p className="mt-4">
-          Our clients are at the centre of our world and we are dedicated to making each and every visit a “luxury
-          experience”. An important ingredient of our success is our attentiveness to our client's needs and our
-          readiness to embrace new concepts and boldly adopt new ideas.
+          Our clients recognise Equinox as a friendly and professional team that consistently delivers superb services
+          to an excellent and high standard combined with a welcoming and warm smile.
         </p>
 
         <p className="mt-4">
-          Our expert barbers are always on hand to listen to and accurately interpret our client's desires and wants,
-          keenly matching these with their hair type and structure to produce a perfectly balanced and blended work of
-          art.
+          Nothing gives us greater pleasure than to see a client walk out of our salon with a hairstyle they love and a
+          spring in their step Every day is a great day at Equinox! We couldn't do the job we love without our amazing
+          clients.
         </p>
-
-        <p className="mt-4">
-          This is followed by a consultation An application of shaving cream will be given to the neck and beard line.
-          The finishing touches to beard shaping will then be made with skill and precision using an open razor blade.
-          The result will be crisp, sharp, straight lines and no visible stubble... Perfect!
-        </p>
-
-        <p className="mt-4">All prices include VAT</p>
       </Section>
 
       <Section className="grid md:grid-cols-2 gap-4">
