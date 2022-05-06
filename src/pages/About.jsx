@@ -3,8 +3,7 @@ import Section from '../components/Section';
 import Gallery from '../components/Gallery';
 import BigImage from '../components/BigImage';
 
-import desktopBannerImage from '../images/about/banner-16-9.jpg';
-import mobileBannerImage from '../images/about/banner-3-16.jpg';
+import bannerImage from '../images/about/banner.jpg';
 
 import mainImageA from '../images/about/main-1.jpg';
 import mainImageB from '../images/about/main-2.jpg';
@@ -28,7 +27,7 @@ export default function About() {
 
   return (
     <>
-      <Banner mobileImage={mobileBannerImage} desktopImage={desktopBannerImage} />
+      <Banner background={bannerImage} bgClassName="bg-center" />
 
       <Section>
         <p>

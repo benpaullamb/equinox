@@ -2,7 +2,7 @@ import Banner from '../components/Banner';
 import Section from '../components/Section';
 import Service from '../components/Service';
 
-import mainImage from '../images/beards/main.jpg';
+import bannerImage from '../images/beards/main.jpg';
 
 export default function Hair() {
   const beardCuts = [
@@ -17,7 +17,7 @@ export default function Hair() {
 
   return (
     <>
-      <Banner mobileImage={mainImage} />
+      <Banner background={bannerImage} bgClassName="bg-center" />
 
       <Section>
         <h2 className="text-xl md:text-2xl font-bold">Gentleman's Beard Grooming</h2>

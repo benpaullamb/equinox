@@ -2,7 +2,7 @@ import Banner from '../components/Banner';
 import Section from '../components/Section';
 import Service from '../components/Service';
 
-import mainImage from '../images/duo-packages/main.jpg';
+import bannerImage from '../images/duo-packages/main.jpg';
 
 export default function DuoPackages() {
   const duoPackages = [
@@ -58,7 +58,7 @@ export default function DuoPackages() {
 
   return (
     <>
-      <Banner mobileImage={mainImage} />
+      <Banner background={bannerImage} bgClassName="bg-center" />
 
       <Section>
         <h2 className="text-xl md:text-2xl font-bold">Duo Packages</h2>

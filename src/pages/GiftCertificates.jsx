@@ -1,12 +1,12 @@
 import Banner from '../components/Banner';
 import Section from '../components/Section';
 
-import mainImage from '../images/about/banner.jpg';
+import bannerImage from '../images/about/banner.jpg';
 
 export default function GiftCertificates() {
   return (
     <>
-      <Banner mobileImage={mainImage} />
+      <Banner background={bannerImage} bgClassName="bg-center" />
 
       <Section>
         <h2 className="text-xl md:text-2xl font-bold">Gentleman's Gift Certificates</h2>

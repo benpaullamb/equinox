@@ -2,7 +2,7 @@ import Banner from '../components/Banner';
 import Section from '../components/Section';
 import Service from '../components/Service';
 
-import mainImage from '../images/shaves/main.jpg';
+import bannerImage from '../images/shaves/main.jpg';
 
 export default function Shaves() {
   const shaves = [
@@ -26,7 +26,7 @@ export default function Shaves() {
 
   return (
     <>
-      <Banner mobileImage={mainImage} />
+      <Banner background={bannerImage} bgClassName="bg-center md:bg-top" />
 
       <Section>
         <h2 className="text-xl md:text-2xl font-bold">Gentleman's Shaving Treatments</h2>

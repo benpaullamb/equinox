@@ -2,7 +2,7 @@ import Banner from '../components/Banner';
 import Section from '../components/Section';
 import ThreeImages from '../components/ThreeImages';
 
-import headshotDouble from '../images/home/headshot-1.jpg';
+import bannerImage from '../images/home/headshot-1.jpg';
 
 import headshotA1 from '../images/home/headshot-4.jpg';
 import headshotA2 from '../images/home/headshot-5.jpg';
@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <Banner mobileImage={headshotDouble} />
+      <Banner background={bannerImage} />
 
       <Section>
         <p>
