@@ -9,10 +9,11 @@ import Beards from './pages/Beards';
 import Shaves from './pages/Shaves';
 import DuoPackages from './pages/DuoPackages';
 import GiftCertificates from './pages/GiftCertificates';
+import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
-    <>
+    <div className="h-full grid grid-rows-[1fr,auto]">
       <NavBar />
 
       <Routes>
@@ -23,9 +24,10 @@ export default function App() {
         <Route path="/shaves" element={<Shaves />} />
         <Route path="/duo-packages" element={<DuoPackages />} />
         <Route path="/gift-certificates" element={<GiftCertificates />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />
-    </>
+    </div>
   );
 }
