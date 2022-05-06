@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MenuIcon } from '@heroicons/react/solid';
+import { AiOutlineMenu } from 'react-icons/ai';
 import NavLink from './NavLink';
 import smallLogo from '../images/logo-sm.png';
 
@@ -55,7 +55,7 @@ export default function NavBar() {
 
       {/* Mobile nav bar */}
       <div className="p-4 flex md:hidden container mx-auto justify-between items-center">
-        <MenuIcon onClick={() => setShowMobileMenu(!showMobileMenu)} className="w-8 h-8" role="button" />
+        <AiOutlineMenu onClick={() => setShowMobileMenu(!showMobileMenu)} className="text-3xl" role="button" />
         <NavLink to="/">
           <img src={smallLogo} className="w-10" alt="Equinox Logo" />
         </NavLink>

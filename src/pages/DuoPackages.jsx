@@ -8,34 +8,41 @@ export default function DuoPackages() {
   const duoPackages = [
     {
       name: 'Equinox Signature Head + Face Shave',
-      description: `Duration: 2hrs. This is a luxurious grooming treatment combining a mini facial/face massage and cut throat razor 
+      description: `This is a luxurious grooming treatment combining a mini facial/face massage and cut throat razor 
         shave combining with a head shave. We will first take the hair down to grade 0 and apply a hot lather of 
         Proraso shaving cream with a badger shaving brush. This is followed by a steaming hot towel wrap to soften 
         the hair. A second hot lather will then be applied before giving the closest of shaves. We then finish off 
         the treatment with Proraso moisturiser gently massaged into the scalp.`,
       price: 80,
+      duration: 120,
     },
     {
       name: 'Equinox Signature Wet Shave + Wet Cut & Finish',
-      description: `Duration: 1hr 30 mins. This is a luxurious grooming treatment combining a mini facial/face massage and cut 
+      description: `This is a luxurious grooming treatment combining a mini facial/face massage and cut 
         throat razor shave combining with the hair grooming service. The hair is cut, dried and finished with cut throat edging 
         using products to suit your hair type. (includes skin fade option)`,
       price: 71,
+      duration: 90,
     },
     {
       name: 'Equinox Signature Wet Shave + Back & Sides',
-      description: `Duration: 1hr 30 mins. This is a luxurious grooming treatment combining a mini facial/face massage and cut 
+      description: `This is a luxurious grooming treatment combining a mini facial/face massage and cut 
         throat razor shave combining with the hair grooming service. Just the Back & Sides is cut, no hair is cut on top. The 
         hair is then sprayed down, dried and finished with cutthroat edging, using products to suit your hair type.`,
       price: 69,
+      duration: 90,
     },
     {
       name: 'Equinox Signature Wet Shave + Clipper Cut',
-      description: `Duration: 1hr 30 mins. This is a luxurious grooming treatment combining a mini facial/face massage and cut 
+      description: `This is a luxurious grooming treatment combining a mini facial/face massage and cut 
         throat razor shave combining with the hair grooming service. Clipper Cut grading all over with clipper grades, blending 
         and cut throat edging.`,
       price: 65,
+      duration: 90,
     },
+  ];
+
+  const hairAndBeardGrooming = [
     {
       name: "Gentleman's Wet Cut And Finish + Beard Grooming",
       description: `Relax in the knowledge your barber is an expert in cutting and styling your hair & beard, creating the perfect 
@@ -78,6 +85,16 @@ export default function DuoPackages() {
       <Section className="grid md:grid-cols-2 gap-4">
         {duoPackages.map((duoPackage) => (
           <Service {...duoPackage} key={duoPackage.name} />
+        ))}
+      </Section>
+
+      <Section>
+        <h2 className="text-xl md:text-2xl font-bold">Hair and Beard Grooming</h2>
+      </Section>
+
+      <Section className="grid md:grid-cols-2 gap-4">
+        {hairAndBeardGrooming.map((grooming) => (
+          <Service {...grooming} key={grooming.name} />
         ))}
       </Section>
     </>
