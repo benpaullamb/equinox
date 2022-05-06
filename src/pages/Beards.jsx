@@ -1,20 +1,10 @@
 import Banner from '../components/Banner';
 import Section from '../components/Section';
 import Service from '../components/Service';
-
+import services from '../services.json';
 import bannerImage from '../images/beards/main.jpg';
 
 export default function Hair() {
-  const beardCuts = [
-    {
-      name: "Gentleman's Beard Grooming",
-      description: `Providing you with the opportunity to be more creative by tailoring your beard design to your 
-        desired look. Our expert barbers will refine, define, maintain and style your beard and moustache into a 
-        thing of beauty.`,
-      price: 18,
-    },
-  ];
-
   return (
     <>
       <Banner background={bannerImage} bgClassName="bg-center" />
@@ -44,7 +34,7 @@ export default function Hair() {
       </Section>
 
       <Section className="grid md:grid-cols-2 gap-4">
-        {beardCuts.map((beardCut) => (
+        {services.beardCuts.map((beardCut) => (
           <Service {...beardCut} key={beardCut.name} />
         ))}
       </Section>

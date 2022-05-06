@@ -1,41 +1,10 @@
 import Banner from '../components/Banner';
 import Section from '../components/Section';
 import Service from '../components/Service';
-
+import services from '../services.json';
 import bannerImage from '../images/home/headshot-2.jpg';
 
 export default function Hair() {
-  const haircuts = [
-    {
-      name: "Gentleman's re-style wet cut and finish",
-      description: `Relax in the knowledge your barber is an expert in cutting and styling hair, creating the perfect 
-        haircut and finish that suits your lifestyle. Full consultation, hair is cut, dried, styled and finished with 
-        cut throat edging using products to suit your hair type (includes skin fade option)`,
-      price: 48,
-    },
-    {
-      name: "Gentleman's wet cut and finish",
-      description: `Relax in the knowledge your barber is an expert in cutting and styling hair, creating the perfect 
-        haircut and finish that suits your lifestyle. The hair is cut, dried, styled and finished with cut throat 
-        edging using products to suit your hair type (includes skin fade option)`,
-      price: 32.5,
-    },
-    {
-      name: "Gentleman's back and sides",
-      description: `Relax in the knowledge your barber is an expert in cutting and styling hair, creating the perfect 
-        haircut and finish that suits your lifestyle. The hair is cut, dried, styled and finished with cut throat 
-        edging using products to suit your hair type (includes skin fade option)`,
-      price: 27,
-    },
-    {
-      name: "Gentleman's clipper cut (buzz cut)",
-      description: `Relax in the knowledge your barber is an expert in cutting and styling hair, creating the perfect 
-        haircut and finish that suits your lifestyle. The hair is buzzed, dried, styled and finished with cut throat 
-        edging using products to suit your hair type.`,
-      price: 23,
-    },
-  ];
-
   return (
     <>
       <Banner background={bannerImage} />
@@ -70,7 +39,7 @@ export default function Hair() {
       </Section>
 
       <Section className="grid md:grid-cols-2 gap-4">
-        {haircuts.map((haircut) => (
+        {services.haircuts.map((haircut) => (
           <Service {...haircut} key={haircut.name} />
         ))}
       </Section>

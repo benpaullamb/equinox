@@ -1,68 +1,10 @@
 import Banner from '../components/Banner';
 import Section from '../components/Section';
 import Service from '../components/Service';
-
+import services from '../services.json';
 import bannerImage from '../images/duo-packages/main.jpg';
 
 export default function DuoPackages() {
-  const duoPackages = [
-    {
-      name: 'Equinox Signature Head + Face Shave',
-      description: `This is a luxurious grooming treatment combining a mini facial/face massage and cut throat razor 
-        shave combining with a head shave. We will first take the hair down to grade 0 and apply a hot lather of 
-        Proraso shaving cream with a badger shaving brush. This is followed by a steaming hot towel wrap to soften 
-        the hair. A second hot lather will then be applied before giving the closest of shaves. We then finish off 
-        the treatment with Proraso moisturiser gently massaged into the scalp.`,
-      price: 80,
-      duration: 120,
-    },
-    {
-      name: 'Equinox Signature Wet Shave + Wet Cut & Finish',
-      description: `This is a luxurious grooming treatment combining a mini facial/face massage and cut 
-        throat razor shave combining with the hair grooming service. The hair is cut, dried and finished with cut throat edging 
-        using products to suit your hair type. (includes skin fade option)`,
-      price: 71,
-      duration: 90,
-    },
-    {
-      name: 'Equinox Signature Wet Shave + Back & Sides',
-      description: `This is a luxurious grooming treatment combining a mini facial/face massage and cut 
-        throat razor shave combining with the hair grooming service. Just the Back & Sides is cut, no hair is cut on top. The 
-        hair is then sprayed down, dried and finished with cutthroat edging, using products to suit your hair type.`,
-      price: 69,
-      duration: 90,
-    },
-    {
-      name: 'Equinox Signature Wet Shave + Clipper Cut',
-      description: `This is a luxurious grooming treatment combining a mini facial/face massage and cut 
-        throat razor shave combining with the hair grooming service. Clipper Cut grading all over with clipper grades, blending 
-        and cut throat edging.`,
-      price: 65,
-      duration: 90,
-    },
-  ];
-
-  const hairAndBeardGrooming = [
-    {
-      name: "Gentleman's Wet Cut And Finish + Beard Grooming",
-      description: `Relax in the knowledge your barber is an expert in cutting and styling your hair & beard, creating the perfect 
-        hair & beard grooming that suits your lifestyle. using only the best hair and beard products`,
-      price: 48,
-    },
-    {
-      name: "Gentleman's Back & Sides + Beard Grooming",
-      description: `Relax in the knowledge your barber is an expert in cutting and styling your hair & beard, creating the perfect 
-        hair & beard grooming that suits your lifestyle. using only the best hair and beard products`,
-      price: 43,
-    },
-    {
-      name: "Gentleman's Clipper Cut + Beard Grooming",
-      description: `Relax in the knowledge your barber is an expert in cutting and styling your hair & beard, creating the perfect 
-        hair & beard grooming that suits your lifestyle. using only the best hair and beard products`,
-      price: 39,
-    },
-  ];
-
   return (
     <>
       <Banner background={bannerImage} bgClassName="bg-center" />
@@ -83,7 +25,7 @@ export default function DuoPackages() {
       </Section>
 
       <Section className="grid md:grid-cols-2 gap-4">
-        {duoPackages.map((duoPackage) => (
+        {services.duoPackages.map((duoPackage) => (
           <Service {...duoPackage} key={duoPackage.name} />
         ))}
       </Section>
@@ -93,7 +35,7 @@ export default function DuoPackages() {
       </Section>
 
       <Section className="grid md:grid-cols-2 gap-4">
-        {hairAndBeardGrooming.map((grooming) => (
+        {services.grooming.map((grooming) => (
           <Service {...grooming} key={grooming.name} />
         ))}
       </Section>

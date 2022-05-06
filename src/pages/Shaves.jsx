@@ -1,29 +1,10 @@
 import Banner from '../components/Banner';
 import Section from '../components/Section';
 import Service from '../components/Service';
-
+import services from '../services.json';
 import bannerImage from '../images/shaves/main.jpg';
 
 export default function Shaves() {
-  const shaves = [
-    {
-      name: 'Equinox Signature Acumen Wet Shave',
-      description: `Duration: 45-mins. Please note that treatment times given here are approximations only. 
-        Treatments may be subject to change depending on skin type. This is a luxurious grooming treatment 
-        combining a mini facial/face massage and cut throat razor shave.`,
-      price: 46,
-    },
-    {
-      name: 'Traditional Wet Head Shave',
-      description: `Do you want a real clean shaven look, with no visible stubble or shadows? Then try our 
-        hot towel head shave. We will first take the hair down to grade 0 and apply a hot lather of Proraso 
-        shaving cream with a badger shaving brush. This is followed by a steaming hot towel wrap to soften 
-        the hair. A second hot lather will then be applied before giving the closest of shaves. We then 
-        finish off the treatment with Proraso moisturiser gently massaged into the scalp.`,
-      price: 36,
-    },
-  ];
-
   return (
     <>
       <Banner background={bannerImage} bgClassName="bg-center md:bg-top" />
@@ -72,7 +53,7 @@ export default function Shaves() {
       </Section>
 
       <Section className="grid md:grid-cols-2 gap-4">
-        {shaves.map((shave) => (
+        {services.shaves.map((shave) => (
           <Service {...shave} key={shave.name} />
         ))}
       </Section>
