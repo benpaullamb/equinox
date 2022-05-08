@@ -23,7 +23,7 @@ export default function Gallery({ images }) {
         ))}
       </section>
 
-      <Section className="hidden md:block">
+      <Section className="hidden md:block md:py-0">
         <Swiper
           navigation
           pagination

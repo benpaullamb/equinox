@@ -33,7 +33,7 @@ export default function Hair() {
         <p className="mt-4">All prices include VAT</p>
       </Section>
 
-      <Section className="grid md:grid-cols-2 gap-4">
+      <Section className="pt-0 grid md:grid-cols-2 gap-4">
         {services.beardCuts.map((beardCut) => (
           <Service {...beardCut} key={beardCut.name} />
         ))}

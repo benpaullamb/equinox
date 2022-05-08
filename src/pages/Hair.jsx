@@ -38,7 +38,7 @@ export default function Hair() {
         </p>
       </Section>
 
-      <Section className="grid md:grid-cols-2 gap-4">
+      <Section className="pt-0 grid md:grid-cols-2 gap-4">
         {services.haircuts.map((haircut) => (
           <Service {...haircut} key={haircut.name} />
         ))}

@@ -24,7 +24,7 @@ export default function DuoPackages() {
         </p>
       </Section>
 
-      <Section className="grid md:grid-cols-2 gap-4">
+      <Section className="pt-0 grid md:grid-cols-2 gap-4">
         {services.duoPackages.map((duoPackage) => (
           <Service {...duoPackage} key={duoPackage.name} />
         ))}
@@ -34,7 +34,7 @@ export default function DuoPackages() {
         <h2 className="text-xl md:text-2xl font-bold">Hair and Beard Grooming</h2>
       </Section>
 
-      <Section className="grid md:grid-cols-2 gap-4">
+      <Section className="pt-0 grid md:grid-cols-2 gap-4">
         {services.grooming.map((grooming) => (
           <Service {...grooming} key={grooming.name} />
         ))}
