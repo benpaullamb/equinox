@@ -1,4 +1,4 @@
-export default function BookButton({ className, ...anchorProps }) {
+export default function BookButton({ className = '', ...anchorProps }) {
   return (
     <a
       href="https://equinox.schedulista.com/"

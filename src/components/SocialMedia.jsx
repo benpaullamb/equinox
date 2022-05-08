@@ -1,6 +1,6 @@
 import { BsInstagram, BsTwitter, BsFacebook } from 'react-icons/bs';
 
-export default function SocialMedia({ className }) {
+export default function SocialMedia({ className = '' }) {
   const socials = [
     {
       icon: BsInstagram,
