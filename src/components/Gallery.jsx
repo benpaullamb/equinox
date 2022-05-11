@@ -25,18 +25,19 @@ export default function Gallery({ images }) {
 
       <Section className="hidden md:block md:py-0">
         <Swiper
+          className="max-w-screen-xl"
+          slidesPerView={4}
+          spaceBetween={16}
+          modules={[Navigation, Pagination]}
           navigation
           pagination
           autoplay
           loop
-          grabCursor
-          slidesPerView={5}
-          spaceBetween={16}
-          modules={[Navigation, Pagination]}>
+          grabCursor>
           {images.map((image, i) => (
-            <SwiperSlide className="flex justify-center" key={image}>
+            <SwiperSlide key={image}>
               {/* eslint-disable-next-line jsx-a11y/alt-text */}
-              <img {...imageProps(image, i)} className="w-full rounded-lg" />
+              <img {...imageProps(image, i)} className="rounded-lg" />
             </SwiperSlide>
           ))}
         </Swiper>
