@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import PageMeta from '../components/PageMeta';
 import Banner from '../components/Banner';
 import Section from '../components/Section';
 import Service from '../components/Service';
@@ -8,9 +8,7 @@ import bannerImage from '../images/duo-packages/main.jpg';
 export default function DuoPackages() {
   return (
     <>
-      <Helmet>
-        <title>Duo Packages - Equinox Barbers</title>
-      </Helmet>
+      <PageMeta title="Duo Packages - Equinox Barbers" />
 
       <Banner background={bannerImage} bgClassName="bg-center" />
 

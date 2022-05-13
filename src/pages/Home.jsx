@@ -1,5 +1,4 @@
-import { Helmet } from 'react-helmet-async';
-
+import PageMeta from '../components/PageMeta';
 import Banner from '../components/Banner';
 import Section from '../components/Section';
 import ThreeImages from '../components/ThreeImages';
@@ -25,9 +24,7 @@ export default function Home() {
 
   return (
     <>
-      <Helmet>
-        <title>Equinox Barbers</title>
-      </Helmet>
+      <PageMeta />
 
       <Banner background={bannerImage} />
 
