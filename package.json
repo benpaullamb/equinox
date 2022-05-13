@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "build": "npm run generate-sitemap && react-scripts build",
+    "postbuild": "react-snap",
     "generate-sitemap": "node ./scripts/generate-sitemap.js"
   },
   "dependencies": {
@@ -17,6 +18,7 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-snap": "^1.23.0",
     "swiper": "^8.1.4"
   },
   "devDependencies": {
