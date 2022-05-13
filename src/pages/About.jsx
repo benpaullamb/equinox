@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet-async';
+
 import Banner from '../components/Banner';
 import Section from '../components/Section';
 import Gallery from '../components/Gallery';
@@ -27,6 +29,10 @@ export default function About() {
 
   return (
     <>
+      <Helmet>
+        <title>About - Equinox Barbers</title>
+      </Helmet>
+
       <Banner background={bannerImage} bgClassName="bg-center" />
 
       <Section>

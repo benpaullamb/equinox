@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import Banner from '../components/Banner';
 import Section from '../components/Section';
 import Service from '../components/Service';
@@ -7,6 +8,10 @@ import bannerImage from '../images/home/headshot-2.jpg';
 export default function Hair() {
   return (
     <>
+      <Helmet>
+        <title>Hair - Equinox Barbers</title>
+      </Helmet>
+
       <Banner background={bannerImage} />
 
       <Section>

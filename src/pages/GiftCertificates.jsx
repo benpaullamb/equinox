@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import Banner from '../components/Banner';
 import Section from '../components/Section';
 
@@ -6,6 +7,10 @@ import bannerImage from '../images/about/banner.jpg';
 export default function GiftCertificates() {
   return (
     <>
+      <Helmet>
+        <title>Gift Certificates - Equinox Barbers</title>
+      </Helmet>
+
       <Banner background={bannerImage} bgClassName="bg-center" />
 
       <Section>

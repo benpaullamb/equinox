@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import Banner from '../components/Banner';
 import Section from '../components/Section';
 import Service from '../components/Service';
@@ -7,6 +8,10 @@ import bannerImage from '../images/shaves/main.jpg';
 export default function Shaves() {
   return (
     <>
+      <Helmet>
+        <title>Shaves - Equinox Barbers</title>
+      </Helmet>
+
       <Banner background={bannerImage} bgClassName="bg-center md:bg-top" />
 
       <Section>
