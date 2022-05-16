@@ -19,14 +19,19 @@ export default function Service({ name, price, description, duration }) {
   return (
     <div className="p-4 flex flex-col justify-between border border-gold-500 rounded-lg">
       <div>
-        <div className="flex justify-between">
-          <span className="mr-4 text-lg capitalize font-bold">{name}</span>
-          <span className="text-lg font-bold">£{formatPrice(price)}</span>
+        <span className="block text-lg capitalize font-bold">{name}</span>
+        <div>
+          <span className="text-lg">£{formatPrice(price)}</span>
+          {duration && (
+            <>
+              <span className="mx-2 font-bold">&middot;</span>
+              <span>{formatDuration(duration)}</span>
+            </>
+          )}
         </div>
-        {duration && <span className="block">{formatDuration(duration)}</span>}
         <p className="mt-2">{description}</p>
       </div>
-      <BookButton className="w-fit mt-4" />
+      <BookButton className="w-full md:w-fit mt-4" />
     </div>
   );
 }

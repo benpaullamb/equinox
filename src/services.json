@@ -31,8 +31,9 @@
   "shaves": [
     {
       "name": "Equinox Signature Acumen Wet Shave",
-      "description": "Duration: 45-mins. Please note that treatment times given here are approximations only. Treatments may be subject to change depending on skin type. This is a luxurious grooming treatment combining a mini facial/face massage and cut throat razor shave.",
-      "price": 46
+      "description": "Please note that treatment times given here are approximations only. Treatments may be subject to change depending on skin type. This is a luxurious grooming treatment combining a mini facial/face massage and cut throat razor shave.",
+      "price": 46,
+      "duration": 45
     },
     {
       "name": "Traditional Wet Head Shave",
