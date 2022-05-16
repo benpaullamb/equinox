@@ -28,7 +28,11 @@ export default function About() {
 
   return (
     <>
-      <PageMeta title="About - Equinox Barbers" />
+      <PageMeta
+        title="About - Equinox Barbers"
+        description="Equinox staff regularly enter national and international competitions, bringing back trophies and
+          are constantly seeking perfection."
+      />
 
       <Banner background={bannerImage} bgClassName="bg-center" />
 

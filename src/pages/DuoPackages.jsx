@@ -8,7 +8,11 @@ import bannerImage from '../images/duo-packages/main.jpg';
 export default function DuoPackages() {
   return (
     <>
-      <PageMeta title="Duo Packages - Equinox Barbers" />
+      <PageMeta
+        title="Duo Packages - Equinox Barbers"
+        description="Our clients recognise Equinox as a friendly and professional team that consistently delivers superb services
+          to an excellent and high standard combined with a welcoming and warm smile."
+      />
 
       <Banner background={bannerImage} bgClassName="bg-center" />
 

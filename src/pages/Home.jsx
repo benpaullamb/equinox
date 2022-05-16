@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <>
-      <PageMeta />
+      <PageMeta description="Here at Equinox we believe that 3 things are important, your hair, your shave and your experience." />
 
       <Banner background={bannerImage} />
 

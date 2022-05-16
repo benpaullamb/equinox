@@ -8,7 +8,11 @@ import bannerImage from '../images/home/headshot-2.jpg';
 export default function Hair() {
   return (
     <>
-      <PageMeta title="Hair - Equinox Barbers" />
+      <PageMeta
+        title="Hair - Equinox Barbers"
+        description="Our stylists are experts in creative men's fashion work, and are true masters of their field offering the very
+          best in Gentlemen's grooming"
+      />
 
       <Banner background={bannerImage} />
 

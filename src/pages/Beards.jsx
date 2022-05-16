@@ -8,7 +8,10 @@ import bannerImage from '../images/beards/main.jpg';
 export default function Hair() {
   return (
     <>
-      <PageMeta title="Beards - Equinox Barbers" />
+      <PageMeta
+        title="Beards - Equinox Barbers"
+        description="Our clients are at the centre of our world and we are dedicated to making each and every visit a &ldquo;luxury experience&rdquo;."
+      />
 
       <Banner background={bannerImage} bgClassName="bg-center" />
 
@@ -28,7 +31,7 @@ export default function Hair() {
         </p>
 
         <p className="mt-4">
-          This is followed by a consultation An application of shaving cream will be given to the neck and beard line.
+          This is followed by a consultation. An application of shaving cream will be given to the neck and beard line.
           The finishing touches to beard shaping will then be made with skill and precision using an open razor blade.
           The result will be crisp, sharp, straight lines and no visible stubble... Perfect!
         </p>

@@ -8,7 +8,10 @@ import bannerImage from '../images/shaves/main.jpg';
 export default function Shaves() {
   return (
     <>
-      <PageMeta title="Shaves - Equinox Barbers" />
+      <PageMeta
+        title="Shaves - Equinox Barbers"
+        description="You really can't beat the experience of a traditional barber wet shave."
+      />
 
       <Banner background={bannerImage} bgClassName="bg-center md:bg-top" />
 

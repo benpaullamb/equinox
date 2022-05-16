@@ -7,7 +7,10 @@ import bannerImage from '../images/about/banner.jpg';
 export default function GiftCertificates() {
   return (
     <>
-      <PageMeta title="Gift Certificates - Equinox Barbers" />
+      <PageMeta
+        title="Gift Certificates - Equinox Barbers"
+        description="The perfect gift for the man who has everything."
+      />
 
       <Banner background={bannerImage} bgClassName="bg-center" />
 
